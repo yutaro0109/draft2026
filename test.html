@@ -1,15 +1,57 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2026ドラフト 30秒自動テスト</title><style>body{font-family:-apple-system,sans-serif;background:#101b2d;color:#f4f6ff;margin:0;padding:14px}h1{font-size:21px}button{padding:12px;border:0;border-radius:9px;background:#337ce2;color:white;font-weight:700;margin:4px}button:disabled{opacity:.4}.panel{background:#1d304d;border-radius:12px;padding:12px;margin:12px 0}.stats{display:flex;gap:8px}.stats>div{flex:1;text-align:center;background:#233d60;padding:10px;border-radius:10px}.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #3e5474;padding:8px;min-width:85px}th{background:#253e60}td:first-child,th:first-child{position:sticky;left:0;background:#253e60;min-width:46px}td:nth-child(2),th:nth-child(2){background:#553044}.log{max-height:240px;overflow:auto}.log div{border-bottom:1px solid #40516a;padding:6px}.small{color:#bdc9db;font-size:12px}.badge{color:#ffdc8e}</style></head><body><h1>⚾ ドラフト30秒自動テスト</h1><div class="small">架空の指名です。実際のドラフト速報とは無関係です。Safariでこのページを開いたままにしてください。</div><div class="panel"><div class="stats"><div><b id="count">0</b><div class="small">確定指名</div></div><div><b id="left">72</b><div class="small">未指名</div></div><div><b id="tick">30</b><div class="small">次のイベントまで秒</div></div></div><p id="phase" class="badge">待機中</p><button id="start" onclick="start()">▶ 30秒間隔で開始</button><button onclick="pause()">一時停止</button><button onclick="advance()">次のイベントを今すぐ実行</button><button onclick="reset()">初期化</button></div><div class="panel"><b>12球団指名表</b><p class="small">横：ウェーバー順。1位は抽選、2位は左→右、3位は右→左。</p><div class="scroll"><table id="board"></table></div></div><div class="panel"><b>入札・抽選・指名イベント履歴</b><div id="events" class="log"></div></div><div class="panel"><b>未指名ランキング</b><div id="rank"></div></div><script>
-const teams=['楽天','中日','ロッテ','ヤクルト','オリックス','広島','日本ハム','DeNA','西武','巨人','ソフトバンク','阪神'];let candidates=[],events=[],picks=[],pointer=0,timer=null,seconds=30;
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2026ドラフト 30秒自動テスト</title><style>body{font-family:-apple-system,sans-serif;background:#101b2d;color:#f4f6ff;margin:0;padding:14px}h1{font-size:21px}button{padding:12px;border:0;border-radius:9px;background:#337ce2;color:white;font-weight:700;margin:4px}button:disabled{opacity:.4}.panel{background:#1d304d;border-radius:12px;padding:12px;margin:12px 0}.stats{display:flex;gap:8px}.stats>div{flex:1;text-align:center;background:#233d60;padding:10px;border-radius:10px}.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #3e5474;padding:8px;min-width:85px}th{background:#253e60}td:first-child,th:first-child{position:sticky;left:0;background:#253e60;min-width:46px}td:nth-child(2),th:nth-child(2){background:#553044}.log{max-height:240px;overflow:auto}.log div{border-bottom:1px solid #40516a;padding:6px}.small{color:#bdc9db;font-size:12px}.badge{color:#ffdc8e}</style></head><body><h1>⚾ ドラフト30秒自動テスト</h1><div class="small">架空の指名です。実際のドラフト速報とは無関係です。Safariでこのページを開いたままにしてください。</div><div class="panel"><div class="stats"><div><b id="count">0</b><div class="small">確定指名</div></div><div><b id="left">72</b><div class="small">未指名</div></div><div><b id="tick">30</b><div class="small">次のイベントまで秒</div></div></div><p id="phase" class="badge">待機中</p><button id="start" onclick="start()">▶ 30秒間隔で開始</button><button onclick="pause()">一時停止</button><button onclick="advance()">次のイベントを今すぐ実行</button><button onclick="reset()">初期化</button></div><div class="panel"><b>12球団指名表</b><p class="small">横：ウェーバー順。1位入札・外れ1位入札・1位確定を別行で表示。2位は左→右、3位は右→左。</p><div class="scroll"><table id="board"></table></div></div><div class="panel"><b>入札・抽選・指名イベント履歴</b><div id="events" class="log"></div></div><div class="panel"><b>未指名ランキング</b><div id="rank"></div></div><script>
+const teams=['楽天','中日','ロッテ','ヤクルト','オリックス','広島','日本ハム','DeNA','西武','巨人','ソフトバンク','阪神'];let candidates=[],events=[],picks=[],bids=[],pointer=0,timer=null,seconds=30;
 // First round deliberately contains overlapping bids, then deterministic simulated lottery outcomes.
 const firstBids=[['楽天','広島','巨人'],['中日','ロッテ'],['ヤクルト','阪神'],['オリックス'],['日本ハム'],['DeNA'],['西武'],['ソフトバンク']];
 const firstNames=[2,0,1,3,4,5,6,7]; // 0-based ranks: Watanabe, Suzuki, Komoda, etc.
 const winners=['楽天','中日','阪神','オリックス','日本ハム','DeNA','西武','ソフトバンク'];
-function plan(){const out=[];for(let i=0;i<firstBids.length;i++){const name=candidates[firstNames[i]].name;out.push({type:'bid',label:`1位入札：${firstBids[i].join('・')} → ${name}`});out.push({type:'award',team:winners[i],round:1,name,label:firstBids[i].length>1?`抽選：${name}（${firstBids[i].length}球団競合）→ ${winners[i]}当選`:`単独1位：${winners[i]} → ${name}`})}const missing=teams.filter(t=>!winners.includes(t));let next=8;for(let i=0;i<missing.length;i++){const c=candidates[next++];out.push({type:'award',team:missing[i],round:1,name:c.name,label:`外れ${i+1}位入札（テスト）：${missing[i]} → ${c.name}`})}for(let round=2;round<=12;round++){const arr=round%2===0?teams:[...teams].reverse();for(const t of arr){const c=candidates[next++];if(!c)return out;out.push({type:'award',team:t,round,name:c.name,label:`${round}位：${t} → ${c.name}`})}}return out}
+function plan(){
+ const out=[];
+ // 1st ballot: every club submits one bid; deliberate overlaps.
+ const first=[
+ ['楽天',2],['中日',0],['ロッテ',0],['ヤクルト',1],
+ ['オリックス',3],['広島',2],['日本ハム',4],['DeNA',5],
+ ['西武',6],['巨人',2],['ソフトバンク',7],['阪神',1]
+ ];
+ for(const [team,idx] of first)out.push({type:'bid',stage:1,team,name:candidates[idx].name,label:`1位入札：${team} → ${candidates[idx].name}`});
+ const groups={};for(const [t,idx] of first){const n=candidates[idx].name;(groups[n]??=[]).push(t)}
+ const winnerMap={'渡部海':'楽天','鈴木泰成':'中日','菰田陽生':'阪神'};
+ const winners=[];
+ for(const [name,ts] of Object.entries(groups)){
+  const winner=winnerMap[name]||ts[0];winners.push(winner);
+  out.push({type:'award',stage:1,team:winner,round:1,name,label:ts.length>1?`1位抽選：${name}（${ts.length}球団競合）→ ${winner}当選`:`1位単独：${winner} → ${name}`});
+ }
+ let next=8,stage=2;
+ // Teams missing the initial lottery enter the first fallback round together.
+ let missing=teams.filter(t=>!winners.includes(t));
+ while(missing.length){
+  const nextMissing=[];
+  for(const team of missing){const c=candidates[next++];if(!c)break;out.push({type:'bid',stage,team,name:c.name,label:`${stage===2?'外れ1位':'外れ外れ1位'}入札：${team} → ${c.name}`});out.push({type:'award',stage,team,round:1,name:c.name,label:`${stage===2?'外れ1位':'外れ外れ1位'}確定：${team} → ${c.name}`})}
+  missing=nextMissing;stage++;
+ }
+ for(let round=2;round<=12;round++){
+  const arr=round%2===0?teams:[...teams].reverse();
+  for(const team of arr){const c=candidates[next++];if(!c)return out;out.push({type:'award',team,round,name:c.name,label:`${round}位：${team} → ${c.name}`})}
+ }
+ return out;
+}
 let schedule=[];
-function render(){document.getElementById('count').textContent=picks.length;document.getElementById('left').textContent=72-picks.length;document.getElementById('tick').textContent=seconds;document.getElementById('phase').textContent=pointer>=schedule.length?'全72選手の指名完了':`次のイベント ${pointer+1}/${schedule.length}：${schedule[pointer]?.label||'準備中'}`;let h='<tr><th>順位</th>'+teams.map((t,i)=>`<th>${i+1}番<br>${t}</th>`).join('')+'</tr>';for(let r=1;r<=12;r++){h+=`<tr><td>${r}位</td>`;for(const t of teams){const p=picks.find(x=>x.team===t&&x.round===r);h+=`<td>${p?p.name:'—'}</td>`}h+='</tr>'}document.getElementById('board').innerHTML=h;document.getElementById('events').innerHTML=events.slice().reverse().map(x=>`<div>${x}</div>`).join('');document.getElementById('rank').innerHTML=candidates.filter(c=>!picks.some(p=>p.name===c.name)).map(c=>`<div style="padding:5px;border-bottom:1px solid #314763">${c.rank}位　${c.name} <span class="small">${c.school}</span></div>`).join('')||'候補者全員が指名済み'}
-function advance(){if(!schedule.length||pointer>=schedule.length){pause();return}const e=schedule[pointer++];events.push(`${pointer}. ${e.label}`);if(e.type==='award'){if(!picks.some(p=>p.name===e.name))picks.push(e)}seconds=30;render();if(pointer>=schedule.length)pause()}
+function render(){document.getElementById('count').textContent=picks.length;document.getElementById('left').textContent=72-picks.length;document.getElementById('tick').textContent=seconds;document.getElementById('phase').textContent=pointer>=schedule.length?'全72選手の指名完了':`次のイベント ${pointer+1}/${schedule.length}：${schedule[pointer]?.label||'準備中'}`;let h='<tr><th>順位</th>'+teams.map((t,i)=>`<th>${i+1}番<br>${t}</th>`).join('')+'</tr>';
+ const stages=[{stage:1,label:'1位入札'},{stage:2,label:'外れ1位入札'},{stage:3,label:'外れ外れ1位入札'}];
+ for(const st of stages){
+  if(st.stage>1&&!bids.some(x=>x.stage===st.stage))continue;
+  h+=`<tr><td>${st.label}</td>`;
+  for(const t of teams){const b=bids.find(x=>x.stage===st.stage&&x.team===t);const awarded=b&&picks.some(x=>x.team===t&&x.name===b.name&&x.round===1);h+=`<td>${b?`${b.name}<br><span class="small">${awarded?'当選・確定':'入札'}</span>`:'—'}</td>`}
+  h+='</tr>';
+ }
+ for(let r=1;r<=12;r++){
+  h+=`<tr><td>${r===1?'1位確定':r+'位'}</td>`;
+  for(const t of teams){const p=picks.find(x=>x.team===t&&x.round===r);h+=`<td>${p?p.name:'—'}</td>`}
+  h+='</tr>';
+ }
+ document.getElementById('board').innerHTML=h;document.getElementById('events').innerHTML=events.slice().reverse().map(x=>`<div>${x}</div>`).join('');document.getElementById('rank').innerHTML=candidates.filter(c=>!picks.some(p=>p.name===c.name)).map(c=>`<div style="padding:5px;border-bottom:1px solid #314763">${c.rank}位　${c.name} <span class="small">${c.school}</span></div>`).join('')||'候補者全員が指名済み'}
+function advance(){if(!schedule.length||pointer>=schedule.length){pause();return}const e=schedule[pointer++];events.push(`${pointer}. ${e.label}`);if(e.type==='bid')bids.push(e);if(e.type==='award'){if(!picks.some(p=>p.name===e.name))picks.push(e)}seconds=30;render();if(pointer>=schedule.length)pause()}
 function start(){if(timer||!schedule.length)return;timer=setInterval(()=>{seconds--;if(seconds<=0)advance();else document.getElementById('tick').textContent=seconds},1000);document.getElementById('start').disabled=true}
 function pause(){clearInterval(timer);timer=null;document.getElementById('start').disabled=false}
-function reset(){pause();events=[];picks=[];pointer=0;seconds=30;render()}
+function reset(){pause();events=[];picks=[];bids=[];pointer=0;seconds=30;render()}
 fetch('./candidates.json').then(r=>r.json()).then(a=>{candidates=a;schedule=plan();render()}).catch(()=>{document.getElementById('phase').textContent='読み込み失敗：GitHub Pages上のURLで開いてください'});
 </script></body></html>
