@@ -1,0 +1,362 @@
+[
+  {
+    "rank": 1,
+    "name": "鈴木泰成",
+    "school": "青山学院大"
+  },
+  {
+    "rank": 2,
+    "name": "菰田陽生",
+    "school": "山梨学院"
+  },
+  {
+    "rank": 3,
+    "name": "渡部海",
+    "school": "青山学院大"
+  },
+  {
+    "rank": 4,
+    "name": "織田翔希",
+    "school": "横浜"
+  },
+  {
+    "rank": 5,
+    "name": "宮原廉",
+    "school": "近畿大"
+  },
+  {
+    "rank": 6,
+    "name": "米沢友翔",
+    "school": "関西大"
+  },
+  {
+    "rank": 7,
+    "name": "藤澤涼介",
+    "school": "東京ガス"
+  },
+  {
+    "rank": 8,
+    "name": "前田侑大",
+    "school": "高岡第一"
+  },
+  {
+    "rank": 9,
+    "name": "榊原七斗",
+    "school": "明治大"
+  },
+  {
+    "rank": 10,
+    "name": "渡辺和大",
+    "school": "慶応大"
+  },
+  {
+    "rank": 11,
+    "name": "沢山優介",
+    "school": "ヤマハ"
+  },
+  {
+    "rank": 12,
+    "name": "角田楓斗",
+    "school": "富士大"
+  },
+  {
+    "rank": 13,
+    "name": "有馬伽久",
+    "school": "立命館大"
+  },
+  {
+    "rank": 14,
+    "name": "杉本真滉",
+    "school": "智辯学園"
+  },
+  {
+    "rank": 15,
+    "name": "末吉良丞",
+    "school": "沖縄尚学"
+  },
+  {
+    "rank": 16,
+    "name": "平田玲翔",
+    "school": "大分商業"
+  },
+  {
+    "rank": 17,
+    "name": "保西雅則",
+    "school": "日本航空石川"
+  },
+  {
+    "rank": 18,
+    "name": "川尻啓人",
+    "school": "亜細亜大"
+  },
+  {
+    "rank": 19,
+    "name": "馬場拓海",
+    "school": "日体大"
+  },
+  {
+    "rank": 20,
+    "name": "星野世那",
+    "school": "大阪商業大"
+  },
+  {
+    "rank": 21,
+    "name": "前嶋藍",
+    "school": "亜細亜大"
+  },
+  {
+    "rank": 22,
+    "name": "西野啓",
+    "school": "立命館大"
+  },
+  {
+    "rank": 23,
+    "name": "山里宝",
+    "school": "亜細亜大"
+  },
+  {
+    "rank": 24,
+    "name": "岡田啓吾",
+    "school": "明治大"
+  },
+  {
+    "rank": 25,
+    "name": "新城楓雅",
+    "school": "奈良大付"
+  },
+  {
+    "rank": 26,
+    "name": "池田聖摩",
+    "school": "横浜"
+  },
+  {
+    "rank": 27,
+    "name": "小金井凌生",
+    "school": "青森大"
+  },
+  {
+    "rank": 28,
+    "name": "猪俣駿太",
+    "school": "東北福祉大"
+  },
+  {
+    "rank": 29,
+    "name": "吉川湊平",
+    "school": "千葉商科大"
+  },
+  {
+    "rank": 30,
+    "name": "仲井慎",
+    "school": "駒澤大"
+  },
+  {
+    "rank": 31,
+    "name": "常深颯大",
+    "school": "大阪経済大"
+  },
+  {
+    "rank": 32,
+    "name": "伊藤権人",
+    "school": "中央大"
+  },
+  {
+    "rank": 33,
+    "name": "黒田義信",
+    "school": "東日本国際大"
+  },
+  {
+    "rank": 34,
+    "name": "春山陽登",
+    "school": "大阪商業大"
+  },
+  {
+    "rank": 35,
+    "name": "長屋竣大",
+    "school": "ENEOS"
+  },
+  {
+    "rank": 36,
+    "name": "柴崎聖人",
+    "school": "王子"
+  },
+  {
+    "rank": 37,
+    "name": "丹羽涼介",
+    "school": "市立和歌山"
+  },
+  {
+    "rank": 38,
+    "name": "田中諒",
+    "school": "日大三"
+  },
+  {
+    "rank": 39,
+    "name": "高田瑛大",
+    "school": "都城"
+  },
+  {
+    "rank": 40,
+    "name": "松平快聖",
+    "school": "神奈川大"
+  },
+  {
+    "rank": 41,
+    "name": "野村亮輔",
+    "school": "佛教大"
+  },
+  {
+    "rank": 42,
+    "name": "的場吏玖",
+    "school": "天理大"
+  },
+  {
+    "rank": 43,
+    "name": "福原聖矢",
+    "school": "明治大"
+  },
+  {
+    "rank": 44,
+    "name": "佐藤悠太",
+    "school": "東北福祉大"
+  },
+  {
+    "rank": 45,
+    "name": "柿本晟弥",
+    "school": "パナソニック"
+  },
+  {
+    "rank": 46,
+    "name": "樋口新",
+    "school": "王子"
+  },
+  {
+    "rank": 47,
+    "name": "相羽寛太",
+    "school": "ヤマハ"
+  },
+  {
+    "rank": 48,
+    "name": "中津大和",
+    "school": "日本生命"
+  },
+  {
+    "rank": 49,
+    "name": "近藤琉唯斗",
+    "school": "小樽双葉"
+  },
+  {
+    "rank": 50,
+    "name": "鈴木悠悟",
+    "school": "中京"
+  },
+  {
+    "rank": 51,
+    "name": "川島謙心",
+    "school": "龍谷大平安"
+  },
+  {
+    "rank": 52,
+    "name": "岡本翔斗",
+    "school": "香里丘"
+  },
+  {
+    "rank": 53,
+    "name": "内藤蒼",
+    "school": "浦和学院"
+  },
+  {
+    "rank": 54,
+    "name": "福島陽奈汰",
+    "school": "東海大熊本星翔"
+  },
+  {
+    "rank": 55,
+    "name": "光弘帆高",
+    "school": "明治大"
+  },
+  {
+    "rank": 56,
+    "name": "磯貝和賢",
+    "school": "Honda"
+  },
+  {
+    "rank": 57,
+    "name": "樫村佳歩",
+    "school": "セガサミー"
+  },
+  {
+    "rank": 58,
+    "name": "川原嗣貴",
+    "school": "Honda鈴鹿"
+  },
+  {
+    "rank": 59,
+    "name": "藤井基",
+    "school": "三菱重工West"
+  },
+  {
+    "rank": 60,
+    "name": "杉崎成",
+    "school": "JR東日本"
+  },
+  {
+    "rank": 61,
+    "name": "田山輝",
+    "school": "仙台育英"
+  },
+  {
+    "rank": 62,
+    "name": "田中皐晴",
+    "school": "日南学園"
+  },
+  {
+    "rank": 63,
+    "name": "生盛亜勇太",
+    "school": "日体大"
+  },
+  {
+    "rank": 64,
+    "name": "伊藤愛希",
+    "school": "吉備国際大"
+  },
+  {
+    "rank": 65,
+    "name": "赤堀颯",
+    "school": "國學院大"
+  },
+  {
+    "rank": 66,
+    "name": "今津慶介",
+    "school": "慶応大"
+  },
+  {
+    "rank": 67,
+    "name": "清水智裕",
+    "school": "ヤマハ"
+  },
+  {
+    "rank": 68,
+    "name": "松浦佑星",
+    "school": "ENEOS"
+  },
+  {
+    "rank": 69,
+    "name": "山田虎太郎",
+    "school": "JR四国"
+  },
+  {
+    "rank": 70,
+    "name": "小松勇輝",
+    "school": "JFE東日本"
+  },
+  {
+    "rank": 71,
+    "name": "三浦遼大",
+    "school": "茨城アストロプラネッツ"
+  },
+  {
+    "rank": 72,
+    "name": "川口真也",
+    "school": "茨城アストロプラネッツ"
+  }
+]
