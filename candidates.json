@@ -1,362 +1,909 @@
 [
   {
     "rank": 1,
-    "name": "鈴木泰成",
-    "school": "青山学院大"
+    "school": "山梨学院",
+    "name": "菰田陽生",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 1,
+    "old_rank": 2,
+    "weighted_score": 1.3
   },
   {
     "rank": 2,
-    "name": "菰田陽生",
-    "school": "山梨学院"
+    "school": "青山学院大",
+    "name": "渡部海",
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 2,
+    "old_rank": 3,
+    "weighted_score": 2.3
   },
   {
     "rank": 3,
-    "name": "渡部海",
-    "school": "青山学院大"
+    "school": "青山学院大",
+    "name": "鈴木泰成",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 3,
+    "old_rank": 1,
+    "weighted_score": 2.4
   },
   {
     "rank": 4,
-    "name": "織田翔希",
-    "school": "横浜"
+    "school": "近畿大",
+    "name": "宮原廉",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 5,
+    "old_rank": 5,
+    "weighted_score": 5.0
   },
   {
     "rank": 5,
-    "name": "宮原廉",
-    "school": "近畿大"
+    "school": "関西大",
+    "name": "米沢友翔",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 8,
+    "old_rank": 6,
+    "weighted_score": 7.4
   },
   {
     "rank": 6,
-    "name": "米沢友翔",
-    "school": "関西大"
+    "school": "明治大",
+    "name": "榊原七斗",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 7,
+    "old_rank": 9,
+    "weighted_score": 7.6
   },
   {
     "rank": 7,
-    "name": "藤澤涼介",
-    "school": "東京ガス"
+    "school": "富士大",
+    "name": "角田楓斗",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 6,
+    "old_rank": 12,
+    "weighted_score": 7.8
   },
   {
     "rank": 8,
-    "name": "前田侑大",
-    "school": "高岡第一"
+    "school": "亜細亜大",
+    "name": "川尻啓人",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 4,
+    "old_rank": 18,
+    "weighted_score": 8.2
   },
   {
     "rank": 9,
-    "name": "榊原七斗",
-    "school": "明治大"
+    "school": "高岡第一",
+    "name": "前田侑大",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 9,
+    "old_rank": 8,
+    "weighted_score": 8.7
   },
   {
     "rank": 10,
-    "name": "渡辺和大",
-    "school": "慶応大"
+    "school": "東京ガス",
+    "name": "藤澤涼介",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 10,
+    "old_rank": 7,
+    "weighted_score": 9.1
   },
   {
     "rank": 11,
-    "name": "沢山優介",
-    "school": "ヤマハ"
+    "school": "慶応大",
+    "name": "渡辺和大",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 11,
+    "old_rank": 10,
+    "weighted_score": 10.7
   },
   {
     "rank": 12,
-    "name": "角田楓斗",
-    "school": "富士大"
+    "school": "大分商業",
+    "name": "平田玲翔",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 12,
+    "old_rank": 16,
+    "weighted_score": 13.2
   },
   {
     "rank": 13,
-    "name": "有馬伽久",
-    "school": "立命館大"
+    "school": "日体大",
+    "name": "馬場拓海",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 13,
+    "old_rank": 19,
+    "weighted_score": 14.8
   },
   {
     "rank": 14,
-    "name": "杉本真滉",
-    "school": "智辯学園"
+    "school": "ヤマハ",
+    "name": "沢山優介",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 17,
+    "old_rank": 11,
+    "weighted_score": 15.2
   },
   {
     "rank": 15,
-    "name": "末吉良丞",
-    "school": "沖縄尚学"
+    "school": "大阪商業大",
+    "name": "星野世那",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 16,
+    "old_rank": 20,
+    "weighted_score": 17.2
   },
   {
     "rank": 16,
-    "name": "平田玲翔",
-    "school": "大分商業"
+    "school": "駒澤大",
+    "name": "仲井慎",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 15,
+    "old_rank": 30,
+    "weighted_score": 19.5
   },
   {
     "rank": 17,
-    "name": "保西雅則",
-    "school": "日本航空石川"
+    "school": "大阪商業大",
+    "name": "春山陽登",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 14,
+    "old_rank": 34,
+    "weighted_score": 20.0
   },
   {
     "rank": 18,
-    "name": "川尻啓人",
-    "school": "亜細亜大"
+    "school": "奈良大付",
+    "name": "新城楓雅",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 19,
+    "old_rank": 25,
+    "weighted_score": 20.8
   },
   {
     "rank": 19,
-    "name": "馬場拓海",
-    "school": "日体大"
+    "school": "明治大",
+    "name": "岡田啓吾",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 20,
+    "old_rank": 24,
+    "weighted_score": 21.2
   },
   {
     "rank": 20,
-    "name": "星野世那",
-    "school": "大阪商業大"
+    "school": "亜細亜大",
+    "name": "山里宝",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 21,
+    "old_rank": 23,
+    "weighted_score": 21.6
   },
   {
     "rank": 21,
+    "school": "亜細亜大",
     "name": "前嶋藍",
-    "school": "亜細亜大"
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 22,
+    "old_rank": 21,
+    "weighted_score": 21.7
   },
   {
     "rank": 22,
-    "name": "西野啓",
-    "school": "立命館大"
+    "school": "日本航空石川",
+    "name": "保西雅則",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 24,
+    "old_rank": 17,
+    "weighted_score": 21.9
   },
   {
     "rank": 23,
-    "name": "山里宝",
-    "school": "亜細亜大"
+    "school": "立命館大",
+    "name": "有馬伽久",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 26,
+    "old_rank": 13,
+    "weighted_score": 22.1
   },
   {
     "rank": 24,
-    "name": "岡田啓吾",
-    "school": "明治大"
+    "school": "智辯学園",
+    "name": "杉本真滉",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 27,
+    "old_rank": 14,
+    "weighted_score": 23.1
   },
   {
     "rank": 25,
-    "name": "新城楓雅",
-    "school": "奈良大付"
+    "school": "パナソニック",
+    "name": "柿本晟弥",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 18,
+    "old_rank": 45,
+    "weighted_score": 26.1
   },
   {
     "rank": 26,
-    "name": "池田聖摩",
-    "school": "横浜"
+    "school": "沖縄尚学",
+    "name": "末吉良丞",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 33,
+    "old_rank": 15,
+    "weighted_score": 27.6
   },
   {
     "rank": 27,
-    "name": "小金井凌生",
-    "school": "青森大"
+    "school": "佛教大",
+    "name": "野村亮輔",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 23,
+    "old_rank": 41,
+    "weighted_score": 28.4
   },
   {
     "rank": 28,
-    "name": "猪俣駿太",
-    "school": "東北福祉大"
+    "school": "千葉商科大",
+    "name": "吉川湊平",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 29,
+    "old_rank": 29,
+    "weighted_score": 29.0
   },
   {
     "rank": 29,
-    "name": "吉川湊平",
-    "school": "千葉商科大"
+    "school": "東北福祉大",
+    "name": "猪俣駿太",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 31,
+    "old_rank": 28,
+    "weighted_score": 30.1
   },
   {
     "rank": 30,
-    "name": "仲井慎",
-    "school": "駒澤大"
+    "school": "王子",
+    "name": "柴崎聖人",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 28,
+    "old_rank": 36,
+    "weighted_score": 30.4
   },
   {
     "rank": 31,
-    "name": "常深颯大",
-    "school": "大阪経済大"
+    "school": "東日本国際大",
+    "name": "黒田義信",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 30,
+    "old_rank": 33,
+    "weighted_score": 30.9
   },
   {
     "rank": 32,
-    "name": "伊藤権人",
-    "school": "中央大"
+    "school": "大阪経済大",
+    "name": "常深颯大",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 32,
+    "old_rank": 31,
+    "weighted_score": 31.7
   },
   {
     "rank": 33,
-    "name": "黒田義信",
-    "school": "東日本国際大"
+    "school": "立命館大",
+    "name": "西野啓",
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 37,
+    "old_rank": 22,
+    "weighted_score": 32.5
   },
   {
     "rank": 34,
-    "name": "春山陽登",
-    "school": "大阪商業大"
+    "school": "横浜",
+    "name": "池田聖摩",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 39,
+    "old_rank": 26,
+    "weighted_score": 35.1
   },
   {
     "rank": 35,
-    "name": "長屋竣大",
-    "school": "ENEOS"
+    "school": "王子",
+    "name": "樋口新",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 34,
+    "old_rank": 46,
+    "weighted_score": 37.6
   },
   {
     "rank": 36,
-    "name": "柴崎聖人",
-    "school": "王子"
+    "school": "都城",
+    "name": "高田瑛大",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 38,
+    "old_rank": 39,
+    "weighted_score": 38.3
   },
   {
     "rank": 37,
-    "name": "丹羽涼介",
-    "school": "市立和歌山"
+    "school": "小樽双葉",
+    "name": "近藤琉唯斗",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 35,
+    "old_rank": 49,
+    "weighted_score": 39.2
   },
   {
     "rank": 38,
-    "name": "田中諒",
-    "school": "日大三"
+    "school": "香里丘",
+    "name": "岡本翔斗",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 36,
+    "old_rank": 52,
+    "weighted_score": 40.8
   },
   {
     "rank": 39,
-    "name": "高田瑛大",
-    "school": "都城"
+    "school": "市立和歌山",
+    "name": "丹羽涼介",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 44,
+    "old_rank": 37,
+    "weighted_score": 41.9
   },
   {
     "rank": 40,
-    "name": "松平快聖",
-    "school": "神奈川大"
+    "school": "九州国際大付",
+    "name": "牟禮翔",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 25,
+    "old_rank": null,
+    "weighted_score": 44.5
   },
   {
     "rank": 41,
-    "name": "野村亮輔",
-    "school": "佛教大"
+    "school": "東北福祉大",
+    "name": "佐藤悠太",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 45,
+    "old_rank": 44,
+    "weighted_score": 44.7
   },
   {
     "rank": 42,
-    "name": "的場吏玖",
-    "school": "天理大"
+    "school": "青森大",
+    "name": "小金井凌生",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 53,
+    "old_rank": 27,
+    "weighted_score": 45.2
   },
   {
     "rank": 43,
-    "name": "福原聖矢",
-    "school": "明治大"
+    "school": "日大三",
+    "name": "田中諒",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 52,
+    "old_rank": 38,
+    "weighted_score": 47.8
   },
   {
     "rank": 44,
-    "name": "佐藤悠太",
-    "school": "東北福祉大"
+    "school": "中京",
+    "name": "鈴木悠悟",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 47,
+    "old_rank": 50,
+    "weighted_score": 47.9
   },
   {
     "rank": 45,
-    "name": "柿本晟弥",
-    "school": "パナソニック"
+    "school": "日南学園",
+    "name": "田中皐晴",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 43,
+    "old_rank": 62,
+    "weighted_score": 48.7
   },
   {
     "rank": 46,
-    "name": "樋口新",
-    "school": "王子"
+    "school": "日本生命",
+    "name": "中津大和",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 51,
+    "old_rank": 48,
+    "weighted_score": 50.1
   },
   {
     "rank": 47,
-    "name": "相羽寛太",
-    "school": "ヤマハ"
+    "school": "浦和学院",
+    "name": "内藤蒼",
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 49,
+    "old_rank": 53,
+    "weighted_score": 50.2
   },
   {
     "rank": 48,
-    "name": "中津大和",
-    "school": "日本生命"
+    "school": "Honda",
+    "name": "磯貝和賢",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 50,
+    "old_rank": 56,
+    "weighted_score": 51.8
   },
   {
     "rank": 49,
-    "name": "近藤琉唯斗",
-    "school": "小樽双葉"
+    "school": "神奈川大",
+    "name": "松平快聖",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 58,
+    "old_rank": 40,
+    "weighted_score": 52.6
   },
   {
     "rank": 50,
-    "name": "鈴木悠悟",
-    "school": "中京"
+    "school": "日体大",
+    "name": "西平晴人",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 40,
+    "old_rank": null,
+    "weighted_score": 55.0
   },
   {
     "rank": 51,
-    "name": "川島謙心",
-    "school": "龍谷大平安"
+    "school": "上武大",
+    "name": "木口永翔",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 41,
+    "old_rank": null,
+    "weighted_score": 55.7
   },
   {
     "rank": 52,
-    "name": "岡本翔斗",
-    "school": "香里丘"
+    "school": "八戸学院光星",
+    "name": "北口晃大",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 42,
+    "old_rank": null,
+    "weighted_score": 56.4
   },
   {
     "rank": 53,
-    "name": "内藤蒼",
-    "school": "浦和学院"
+    "school": "國學院大",
+    "name": "赤堀颯",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 54,
+    "old_rank": 65,
+    "weighted_score": 57.3
   },
   {
     "rank": 54,
-    "name": "福島陽奈汰",
-    "school": "東海大熊本星翔"
+    "school": "法政大",
+    "name": "藤森康淳",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 46,
+    "old_rank": null,
+    "weighted_score": 59.2
   },
   {
     "rank": 55,
-    "name": "光弘帆高",
-    "school": "明治大"
+    "school": "仙台育英",
+    "name": "田山輝",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 59,
+    "old_rank": 61,
+    "weighted_score": 59.6
   },
   {
     "rank": 56,
-    "name": "磯貝和賢",
-    "school": "Honda"
+    "school": "大阪工業大",
+    "name": "岡田光平",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 48,
+    "old_rank": null,
+    "weighted_score": 60.6
   },
   {
     "rank": 57,
-    "name": "樫村佳歩",
-    "school": "セガサミー"
+    "school": "茨城アストロプラネッツ",
+    "name": "三浦遼大",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 57,
+    "old_rank": 71,
+    "weighted_score": 61.2
   },
   {
     "rank": 58,
-    "name": "川原嗣貴",
-    "school": "Honda鈴鹿"
+    "school": "日体大",
+    "name": "生盛亜勇太",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 62,
+    "old_rank": 63,
+    "weighted_score": 62.3
   },
   {
     "rank": 59,
-    "name": "藤井基",
-    "school": "三菱重工West"
+    "school": "ヤマハ",
+    "name": "清水智裕",
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 61,
+    "old_rank": 67,
+    "weighted_score": 62.8
   },
   {
     "rank": 60,
-    "name": "杉崎成",
-    "school": "JR東日本"
+    "school": "龍谷大平安",
+    "name": "川島謙心",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 68,
+    "old_rank": 51,
+    "weighted_score": 62.9
   },
   {
     "rank": 61,
-    "name": "田山輝",
-    "school": "仙台育英"
+    "name": "織田翔希",
+    "school": "横浜",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 4,
+    "new_rank": null,
+    "old_rank": 4,
+    "weighted_score": 64.2
   },
   {
     "rank": 62,
-    "name": "田中皐晴",
-    "school": "日南学園"
+    "school": "セガサミー",
+    "name": "樫村佳歩",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 69,
+    "old_rank": 57,
+    "weighted_score": 65.4
   },
   {
     "rank": 63,
-    "name": "生盛亜勇太",
-    "school": "日体大"
+    "school": "明星大",
+    "name": "加藤宇",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 55,
+    "old_rank": null,
+    "weighted_score": 65.5
   },
   {
     "rank": 64,
-    "name": "伊藤愛希",
-    "school": "吉備国際大"
+    "school": "至学館大",
+    "name": "中川大雅",
+    "position": "内野手",
+    "source": "西尾10月版",
+    "new_rank": 56,
+    "old_rank": null,
+    "weighted_score": 66.2
   },
   {
     "rank": 65,
-    "name": "赤堀颯",
-    "school": "國學院大"
+    "school": "柳川",
+    "name": "小坪碧人",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 60,
+    "old_rank": null,
+    "weighted_score": 69.0
   },
   {
     "rank": 66,
-    "name": "今津慶介",
-    "school": "慶応大"
+    "school": "徳島インディゴソックス",
+    "name": "渡邉隼輔",
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 63,
+    "old_rank": null,
+    "weighted_score": 71.1
   },
   {
     "rank": 67,
-    "name": "清水智裕",
-    "school": "ヤマハ"
+    "school": "花咲徳栄",
+    "name": "黒川凌大",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 64,
+    "old_rank": null,
+    "weighted_score": 71.8
   },
   {
     "rank": 68,
-    "name": "松浦佑星",
-    "school": "ENEOS"
+    "school": "上田西",
+    "name": "内藤岬",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 65,
+    "old_rank": null,
+    "weighted_score": 72.5
   },
   {
     "rank": 69,
-    "name": "山田虎太郎",
-    "school": "JR四国"
+    "name": "伊藤権人",
+    "school": "中央大",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 32,
+    "new_rank": null,
+    "old_rank": 32,
+    "weighted_score": 72.6
   },
   {
     "rank": 70,
-    "name": "小松勇輝",
-    "school": "JFE東日本"
+    "school": "常葉大菊川",
+    "name": "佐藤大介",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 66,
+    "old_rank": null,
+    "weighted_score": 73.2
   },
   {
     "rank": 71,
-    "name": "三浦遼大",
-    "school": "茨城アストロプラネッツ"
+    "name": "長屋竣大",
+    "school": "ENEOS",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 35,
+    "new_rank": null,
+    "old_rank": 35,
+    "weighted_score": 73.5
   },
   {
     "rank": 72,
+    "school": "京都国際",
+    "name": "西田耀史",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 67,
+    "old_rank": null,
+    "weighted_score": 73.9
+  },
+  {
+    "rank": 73,
+    "name": "的場吏玖",
+    "school": "天理大",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 42,
+    "new_rank": null,
+    "old_rank": 42,
+    "weighted_score": 75.6
+  },
+  {
+    "rank": 74,
+    "name": "福原聖矢",
+    "school": "明治大",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 43,
+    "new_rank": null,
+    "old_rank": 43,
+    "weighted_score": 75.9
+  },
+  {
+    "rank": 75,
+    "school": "花咲徳栄",
+    "name": "佐伯真聡",
+    "position": "捕手",
+    "source": "西尾10月版",
+    "new_rank": 70,
+    "old_rank": null,
+    "weighted_score": 76.0
+  },
+  {
+    "rank": 76,
+    "school": "エイジェック",
+    "name": "谷内隆悟",
+    "position": "投手",
+    "source": "西尾10月版",
+    "new_rank": 71,
+    "old_rank": null,
+    "weighted_score": 76.7
+  },
+  {
+    "rank": 77,
+    "name": "相羽寛太",
+    "school": "ヤマハ",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 47,
+    "new_rank": null,
+    "old_rank": 47,
+    "weighted_score": 77.1
+  },
+  {
+    "rank": 78,
+    "school": "富山GRNサンダーバーズ",
+    "name": "根本翔希",
+    "position": "外野手",
+    "source": "西尾10月版",
+    "new_rank": 72,
+    "old_rank": null,
+    "weighted_score": 77.4
+  },
+  {
+    "rank": 79,
+    "name": "福島陽奈汰",
+    "school": "東海大熊本星翔",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 54,
+    "new_rank": null,
+    "old_rank": 54,
+    "weighted_score": 79.2
+  },
+  {
+    "rank": 80,
+    "name": "光弘帆高",
+    "school": "明治大",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 55,
+    "new_rank": null,
+    "old_rank": 55,
+    "weighted_score": 79.5
+  },
+  {
+    "rank": 81,
+    "name": "川原嗣貴",
+    "school": "Honda鈴鹿",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 58,
+    "new_rank": null,
+    "old_rank": 58,
+    "weighted_score": 80.4
+  },
+  {
+    "rank": 82,
+    "name": "藤井基",
+    "school": "三菱重工West",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 59,
+    "new_rank": null,
+    "old_rank": 59,
+    "weighted_score": 80.7
+  },
+  {
+    "rank": 83,
+    "name": "杉崎成",
+    "school": "JR東日本",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 60,
+    "new_rank": null,
+    "old_rank": 60,
+    "weighted_score": 81.0
+  },
+  {
+    "rank": 84,
+    "name": "伊藤愛希",
+    "school": "吉備国際大",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 64,
+    "new_rank": null,
+    "old_rank": 64,
+    "weighted_score": 82.2
+  },
+  {
+    "rank": 85,
+    "name": "今津慶介",
+    "school": "慶応大",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 66,
+    "new_rank": null,
+    "old_rank": 66,
+    "weighted_score": 82.8
+  },
+  {
+    "rank": 86,
+    "name": "松浦佑星",
+    "school": "ENEOS",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 68,
+    "new_rank": null,
+    "old_rank": 68,
+    "weighted_score": 83.4
+  },
+  {
+    "rank": 87,
+    "name": "山田虎太郎",
+    "school": "JR四国",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 69,
+    "new_rank": null,
+    "old_rank": 69,
+    "weighted_score": 83.7
+  },
+  {
+    "rank": 88,
+    "name": "小松勇輝",
+    "school": "JFE東日本",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 70,
+    "new_rank": null,
+    "old_rank": 70,
+    "weighted_score": 84.0
+  },
+  {
+    "rank": 89,
     "name": "川口真也",
-    "school": "茨城アストロプラネッツ"
+    "school": "茨城アストロプラネッツ",
+    "position": "未分類",
+    "source": "旧リスト追加",
+    "previous_rank": 72,
+    "new_rank": null,
+    "old_rank": 72,
+    "weighted_score": 84.6
   }
 ]
